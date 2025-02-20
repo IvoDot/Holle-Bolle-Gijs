@@ -48,7 +48,7 @@ void sensorInterrupt () {
     SongToPlay = randommp3();
     Serial.println("SongToPlay = "+SongToPlay);
     //player.playSpecifiedDevicePath(DY::Device::Sd,"/HBG1.mp3"); // Werkt OK
-      player.playSpecifiedDevicePath(DY::Device::Sd,'SongToPlay');
+      player.playSpecifiedDevicePath(DY::Device::Sd, SongToPlay.c_str());
   }
 }
 
